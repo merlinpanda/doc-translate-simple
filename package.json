@@ -29,11 +29,11 @@
     "vitepress": "1.0.0-alpha.21"
   },
   "lint-staged": {
-    "src/**/*.{ts.js.vue.md}": [
+    "src/**/*.{ts,js,vue,md}": [
       "prettier --write",
       "esslint --cache --fix"
     ],
-    ".vitepress/**/*.{ts.vue}": [
+    ".vitepress/**/*.{ts,vue}": [
       "prettier --write",
       "esslint --cache --fix"
     ]
