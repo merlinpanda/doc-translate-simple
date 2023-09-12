@@ -11,5 +11,5 @@ export default Object.assign({
       // banner: () => h(Banner),
       'layout-bottom': () => h(Footer)
     })
-  },
+  }
 })

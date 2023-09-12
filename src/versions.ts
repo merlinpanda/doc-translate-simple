@@ -1,4 +1,4 @@
 /**
  * 版本列表
  */
-export default ["latest"];
+export default ['latest']
