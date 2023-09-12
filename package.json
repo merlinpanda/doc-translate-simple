@@ -1,0 +1,41 @@
+{
+  "name": "zh-docs-single",
+  "version": "1.0.0",
+  "license": "MIT",
+  "scripts": {
+    "dev": "vitepress dev",
+    "build": "vitepress build",
+    "serve": "vitepress serve",
+    "lint": "lint-staged",
+    "prepare": "husky install"
+  },
+  "dependencies": {
+    "@commitlint/cli": "^17.7.1",
+    "@commitlint/config-conventional": "^17.7.0",
+    "autoprefixer": "^10.4.12",
+    "clipboard": "^2.0.11",
+    "dynamics.js": "^1.1.5",
+    "gsap": "^3.11.3",
+    "tailwindcss": "^3.1.8"
+  },
+  "devDependencies": {
+    "@types/markdown-it": "^12.2.3",
+    "@types/node": "^16.11.65",
+    "husky": "^8.0.3",
+    "lint-staged": "^14.0.1",
+    "postcss": "^8.4.18",
+    "postcss-import": "^14.1.0",
+    "terser": "^5.15.1",
+    "vitepress": "1.0.0-alpha.21"
+  },
+  "lint-staged": {
+    "src/**/*.{ts.js.vue.md}": [
+      "prettier --write",
+      "esslint --cache --fix"
+    ],
+    ".vitepress/**/*.{ts.vue}": [
+      "prettier --write",
+      "esslint --cache --fix"
+    ]
+  }
+}
